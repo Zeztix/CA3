@@ -12,7 +12,7 @@
         --secondary-font-color: rgb(88,110,117);
         --emphasised-font: rgb(147,161,161);
 
-        background-color: rgb(0, 43, 54);
+        --c-background-color: rgb(0, 43, 54);
         --c-background-highlights: rgb(7, 54, 66);
          
         --c-yellow: rgb(181,137,  0);
@@ -24,6 +24,10 @@
         --c-cyan: rgb(42,161,152);
         --c-green: rgb(133,153,0);
       }
+      html {
+        background-color: var(--c-background-color);
+        width: 800px;
+      }
       header {
         color: var(--c-yellow);
         text-align: center;
@@ -32,6 +36,8 @@
       }
       main {
         color: var(--base-font-color);
+        width: 80%;
+        font-size: 115%;
       }
       footer {
         background-color: var(--c-background-highlights);
@@ -53,12 +59,17 @@
       }
       aside {
         color: var(--c-green);
+        position: absolute; left: 630px; bottom: 300px;
+        width: 100px;
       }
       aside a:link {
         color: var(--c-red);
       }
       aside a:hover {
         color: var(--c-blue);
+      }
+      article h2, h3 { 
+        padding-top: 50px;
       }
     </style>
 
