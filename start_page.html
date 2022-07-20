@@ -28,18 +28,37 @@
         color: var(--c-yellow);
         text-align: center;
         font-size: 150%;
+        background-color: var(--c-background-highlights);
       }
-      main, footer {
-        color: var(--base-font-color)
+      main {
+        color: var(--base-font-color);
       }
-      a:link {
-        color: var(--c-magenta)
+      footer {
+        background-color: var(--c-background-highlights);
+        color: var(--base-font-color);
       }
-      a:hover {
-        color: var(--c-orange)
+      p a:link {
+        color: var(--c-magenta);
+      }
+      p a:hover {
+        color: var(--c-orange);
       }
       div {
-        border: 3px solid var(--c-cyan)
+        border: 3px solid var(--c-cyan);
+      }
+      nav ul {
+        justify-content: center;
+        display: flex;
+        gap: 100px;
+      }
+      aside {
+        color: var(--c-green);
+      }
+      aside a:link {
+        color: var(--c-red);
+      }
+      aside a:hover {
+        color: var(--c-blue);
       }
     </style>
 
@@ -49,15 +68,15 @@
     <!-- Here is our main header that is used across all the pages of our website -->
 
     <header>
-      <h1 style="background-color: var(--c-background-highlights)">Header</h1>
+      <h1>Header</h1>
     </header>
 
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <a href="#">Home</a>
+        <a href="#">Our team</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
       </ul>
 
        <!-- A Search form is another common non-linear way to navigate through a website. -->
@@ -112,7 +131,7 @@
     <!-- And here is our main footer that is used across all the pages of our website -->
 
     <footer>
-      <p style="background-color: var(--c-background-highlights)">©Copyright 2050 by nobody. All rights reversed.</p>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
 
   </body>
